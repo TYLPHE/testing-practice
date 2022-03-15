@@ -1,0 +1,22 @@
+const analyzeArray = require('./analyzeArray')
+const arr = [1,8,3,4,2,6];
+
+it('Array - Average', () => {
+  expect(analyzeArray(arr).average)
+    .toBe(4)
+});
+
+it('Array - min', () => {
+  expect(analyzeArray(arr).min)
+    .toBe(1)
+});
+
+it('Array - max', () => {
+  expect(analyzeArray(arr).max)
+    .toBe(8)
+});
+
+it('Array - length', () => {
+  expect(analyzeArray(arr).length)
+    .toBe(6)
+});
